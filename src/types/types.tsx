@@ -4,5 +4,5 @@ export interface ICategory {
 
 export interface ITopic {
     title: string;
-    categories: ICategory[];
+    categories?: ICategory[];
 }

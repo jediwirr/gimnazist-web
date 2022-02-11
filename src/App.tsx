@@ -1,15 +1,22 @@
-import React from 'react';
-import './App.css';
-import List from './components/List/List';
-import { topics } from './data/topics';
-import { ITopic } from "./types/types"
+import React from "react";
+import "./App.css";
+import Menu from "./components/Menu/Menu";
+import MenuItem from "./components/MenuItem/MenuItem";
+import { topics } from "./data/topics";
 
 function App() {
   return (
     <div className="App">
-      <List items={topics} renderItem={(topic: ITopic) =>
-        <p>{topic.title}</p>
-      } />
+     <header>
+       <div className="App__logo">
+        <img src='https://gimnazist.spb.ru/templates/jtnschool/images/logo_gym%20(book%20antiqua).png' alt="logo" />
+       </div>
+       <h1>Проект Санкт-Петербургской гимназии «АЛЬМА-МАТЕР»</h1>
+       <div className="header__background"></div>
+      <Menu topics={topics} renderItem={topic =>
+          <MenuItem topic={topic} />
+        } />
+     </header>
     </div>
   );
 }
