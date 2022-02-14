@@ -1,0 +1,9 @@
+.title {
+    font-weight: bold;
+}
+
+.rowItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

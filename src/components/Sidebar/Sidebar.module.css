@@ -1,0 +1,7 @@
+.sidebar {
+    flex-grow: 1;
+    margin-right: 15px;
+    max-width: 250px;
+    overflow: scroll;
+    min-height: 800px;
+  }

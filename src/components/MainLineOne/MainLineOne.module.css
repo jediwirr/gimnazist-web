@@ -1,0 +1,13 @@
+.mainLineOne {
+    display: flex;
+}
+
+.mainArticle {
+    flex-grow: 1;
+    margin-right: 15px;
+    min-width: 500px;
+}
+
+.topArticle {
+    max-width: 300px;
+}

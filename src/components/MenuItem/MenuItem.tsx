@@ -23,7 +23,7 @@ const MenuItem: FC<MenuItemProps> = ({topic}) => {
             {isCategoriesShown ?
                 <div className={styles.menuList}>
                     {topic.categories?.map(category =>
-                        <p>{category.title}</p>    
+                        <p key={category.title}>{category.title}</p>    
                     )}
                 </div> : <></>
             }

@@ -1,0 +1,9 @@
+.MainLineFive {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lineFiveArticle {
+    width: 48%;
+}

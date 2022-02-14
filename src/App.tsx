@@ -3,8 +3,10 @@ import "./App.css";
 import Menu from "./components/Menu/Menu";
 import MenuItem from "./components/MenuItem/MenuItem";
 import { topics } from "./data/topics";
+import Main from "./components/Main/Main";
 
 function App() {
+
   return (
     <div className="App">
      <header>
@@ -14,9 +16,12 @@ function App() {
        <h1>Проект Санкт-Петербургской гимназии «АЛЬМА-МАТЕР»</h1>
        <div className="header__background"></div>
       <Menu topics={topics} renderItem={topic =>
-          <MenuItem topic={topic} />
+          <MenuItem key={topic.title} topic={topic} />
         } />
      </header>
+     <div className="container">
+        <Main />
+     </div>
     </div>
   );
 }

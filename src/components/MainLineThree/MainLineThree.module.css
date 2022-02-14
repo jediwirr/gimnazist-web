@@ -1,0 +1,9 @@
+.MainLineThree {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lineThreeArticle {
+    width: 48%;
+}

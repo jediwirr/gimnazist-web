@@ -1,0 +1,21 @@
+
+.MainLineTwo__wrapper {
+    max-width: 890px;
+    overflow: scroll;
+}
+
+.MainLineTwo {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.lineTwoArticle {
+    width: 100%;
+    max-height: 220px;
+    overflow: hidden;
+}
+
+/* .lineTwoArticle img {
+    object-fit: cover;
+} */
