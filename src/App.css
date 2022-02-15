@@ -34,12 +34,6 @@ header {
   margin-bottom: 15px;
 }
 
-.App__logo {
-  width: 50%;
-  margin: 0 auto;
-  height: 80px;
-}
-
 .header__background {
   position: absolute;
   bottom: 0;

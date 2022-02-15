@@ -9,7 +9,6 @@ interface MainLineTwoProps {
 }
 
 const MainLineTwo: FC<MainLineTwoProps> = ({articles}) => {
-    console.log(articles);
 
     return (
         <div className={styles.MainLineTwo__wrapper}>

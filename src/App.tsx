@@ -5,12 +5,18 @@ import MenuItem from "./components/MenuItem/MenuItem";
 import { topics } from "./data/topics";
 import Main from "./components/Main/Main";
 
+import { css } from "@emotion/css";
+
 function App() {
 
   return (
     <div className="App">
      <header>
-       <div className="App__logo">
+       <div className={css`
+          width: 50%;
+          margin: 0 auto;
+          height: 80px;
+       `}>
         <img src='https://gimnazist.spb.ru/templates/jtnschool/images/logo_gym%20(book%20antiqua).png' alt="logo" />
        </div>
        <h1>Проект Санкт-Петербургской гимназии «АЛЬМА-МАТЕР»</h1>
