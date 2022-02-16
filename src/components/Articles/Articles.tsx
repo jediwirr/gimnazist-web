@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import { IArticle } from "../../types/types";
-import styles from "./Articles.module.css";
 
-import { css } from "@emotion/css";
+import { css } from "@emotion/react";
 
 interface ArticlesProps {
     items: IArticle[];
@@ -13,13 +12,14 @@ interface ArticlesProps {
 const Articles: FC<ArticlesProps> = ({items, renderItem, row}) => {
 
     return (
-        <div style={{
-            display: "flex",
-            flexDirection: row ? "row" : "column",
-        }}>
+        <div css={css`
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: ${row ? "row" : "column"};
+        `}>
             {items.map(renderItem)}
         </div>
-    )
+    );
 }
 
 export default Articles;

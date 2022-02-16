@@ -3,6 +3,7 @@ import Articles from "../Articles/Articles";
 import Article from "../Article/Article";
 import styles from "./MainLineThree.module.css";
 import { IArticle } from "../../types/types";
+import CategoryTitle from "../CategoyTitle/CategoryTitle";
 
 interface MainLineThreeProps {
     articles: IArticle[];
@@ -18,8 +19,8 @@ const MainLineThree: FC<MainLineThreeProps> = ({articles}) => {
                         if (item.position === "line-three-a") {
                             return (
                                 <div key={item.id}>
-                                    <span key={item.category} className="category-title">{item.category}</span>
-                                    <Article key={item.title} item={item} />
+                                    <CategoryTitle title={item.category} />
+                                    <Article key={item.title} item={item} button />
                                 </div>
                             )
                         }
@@ -32,8 +33,8 @@ const MainLineThree: FC<MainLineThreeProps> = ({articles}) => {
                         if (item.position === "line-three-b") {
                             return (
                                 <div key={item.id}>
-                                    <span className="category-title">{item.category}</span>
-                                    <Article key={item.title} item={item} />
+                                    <CategoryTitle title={item.category} />
+                                    <Article key={item.title} item={item} button />
                                 </div>
                             )
                         }
