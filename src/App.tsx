@@ -7,6 +7,7 @@ import Main from "./components/Main/Main";
 
 import { css } from "@emotion/css";
 import { ThemeProvider } from "@emotion/react";
+import Counter from "./components/Probe/Counter";
 
 const theme = {
   color: {
@@ -22,6 +23,7 @@ const theme = {
 function App() {
 
   return (
+    // <Counter />
     <ThemeProvider theme={theme}>
       <div className="App">
         <header>
